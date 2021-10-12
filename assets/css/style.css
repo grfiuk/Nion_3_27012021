@@ -1,7 +1,7 @@
 @font-face {
-    font-family: "shrikhand";
-    src: url("/assets/font/Shrikhand/Shrikhand-Regular.ttf");
+    font-family: "Shrikhand-Regular, sans-serif" ;
+    src: url("../font/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
 }
 .titre{
-    font-family: "shrikhand", serif;
+    font-family:"Shrikhand-Regular, sans-serif";
 }
