@@ -9,3 +9,9 @@ body{
 .titre{
     font-family:"Shrikhand-Regular, sans-serif";
 }
+.dis_flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
