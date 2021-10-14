@@ -43,6 +43,7 @@ body{
 }
 /*----------------------*/
 
+
 /*------taille------*/
 .width_80{
     width: 80%;
@@ -55,6 +56,7 @@ img{
     height: 200px;
 }
 /*------------------*/
+
 
 /*------color-----*/
 .background_grey{
@@ -78,10 +80,17 @@ img{
 
 
 
-
+/*-----style_box-----*/
 .border_radius_box{
     border-radius:20px;
 }
 .border_radius_img{
     border-radius: 20px 20px 0px 0px;
+}
+/*-------------------*/
+
+/*------style_text------*/
+a{
+    text-decoration: none;
+    color: black;
 }
