@@ -6,14 +6,44 @@ body{
     font-family: "Shrikhand-Regular, sans-serif" ;
     src: url("../font/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
 }
-.titre{
-    font-family:"Shrikhand-Regular, sans-serif";
+.pos_absolute{
+    position: absolute;
+}
+.pos_relative{
+    position: relative;
 }
 .dis_flex{
     display: flex;
 }
 .column{
     flex-direction: column;
+}
+.just_content_center{
+    justify-content: center;
+}
+.width_80{
+    width: 80%;
+}
+.background_grey{
+    background-color: rgb(188, 187, 187);
+}
+.bg_white{
+    background-color: white;
+}
+.border_radius_box{
+    border-radius:20px;
+}
+.border_radius_img{
+    border-radius: 20px 20px 0px 0px;
+}
+.footer_color{
+    color: white;
+}
+.footer_bg_color{
+    background-color: rgb(54, 54, 54);
+}
+.titre{
+    font-family:"Shrikhand-Regular, sans-serif";
 }
 img{
     min-width: 100%;
@@ -24,10 +54,10 @@ img{
 }
 .nouveau{
     background-color: #99E2D0;
-    position: absolute;
     top: 10px;
     right: 20px;
 }
-.pos_relative{
-    position: relative;
+.pos_icon_coeur{
+    right: 25px;
+    bottom: 40px;
 }
