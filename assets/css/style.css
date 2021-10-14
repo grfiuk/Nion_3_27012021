@@ -3,6 +3,7 @@ body{
     margin: 0;
 }
 
+
 /*-----font-----*/
 @font-face {
     font-family: "Shrikhand-Regular, sans-serif" ;
@@ -19,6 +20,7 @@ body{
     font-family: "Roboto-Regular, sans-serif";
 }
 /*--------------*/
+
 
 
 /*-----position-----*/
@@ -47,6 +49,13 @@ body{
 /*----------------------*/
 
 
+/*-----espace-----*/
+.marg_box_fonc{
+    margin: 20px;
+}
+/*---------------*/
+
+
 /*------taille------*/
 .width_80{
     width: 80%;
@@ -59,9 +68,13 @@ img{
     height: 200px;
 }
 .div_height{
-    height: 100px;
+    height: 60px;
+}
+.div_fonc_width{
+    width: 100vw;
 }
 /*------------------*/
+
 
 
 /*------color-----*/
@@ -93,7 +106,15 @@ img{
 .border_radius_img{
     border-radius: 20px 20px 0px 0px;
 }
+.style_menu_fonc{
+    border-radius: 15px;
+}
+.box_shadow_fonc{
+    box-shadow: 3px 3px 5px;
+}
 /*-------------------*/
+
+
 
 /*------style_text------*/
 a{
