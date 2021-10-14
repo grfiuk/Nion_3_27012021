@@ -22,3 +22,8 @@ img{
 .img_height{
     height: 200px;
 }
+.nouveau{
+    background-color: #99E2D0;
+    position: relative;
+    float: right;
+}
