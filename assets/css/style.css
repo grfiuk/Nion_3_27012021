@@ -3,10 +3,6 @@ body,h1,h3,p,footer{
     margin: 0;
 }
 
-div{
-    border: 2px solid black;
-}
-
 /*-----font-----*/
 @font-face {
     font-family: "Shrikhand-Regular, sans-serif" ;
@@ -42,6 +38,9 @@ body{
 .just_content_center{
     justify-content: center;
 }
+.just_content_spa_bet{
+    justify-content: space-between;
+}
 .al_item_center{
     align-items: center;
 }
@@ -66,11 +65,20 @@ body{
 .marg_20{
     margin: 20px;
 }
+.marg_bott_5{
+    margin-bottom: 5px;
+}
+.marg_top_5{
+    margin-top: 5px;
+}
 .pad_20{
     padding: 20px;
 }
 .pad_10{
     padding: 10px;
+}
+.pad_5{
+    padding: 5px;
 }
 .marg_bott_20{
     margin-bottom: 20px;
@@ -78,6 +86,7 @@ body{
 .pad_top_20{
     padding-top: 20px;
 }
+
 /*---------------*/
 
 
@@ -104,7 +113,7 @@ img{
 
 /*------color-----*/
 .background_Lgrey{
-    background-color: rgb(246, 241, 241);
+    background-color: rgb(229, 229, 229);
 }
 .bg_grey{
     background-color: rgb(226, 224, 224);
