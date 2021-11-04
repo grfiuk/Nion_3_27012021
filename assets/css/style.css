@@ -3,11 +3,14 @@ body,h1,h3,p,footer{
     margin: 0;
 }
 
+div{
+    border: 2px solid black;
+}
 
 /*-----font-----*/
 @font-face {
     font-family: "Shrikhand-Regular, sans-serif" ;
-    src: url("../font/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+    src: url("../font/Shrikhand/Shrikhand-Regular.ttf");
 }
 .titre{
     font-family:"Shrikhand-Regular, sans-serif";
@@ -42,9 +45,19 @@ body{
 .al_item_center{
     align-items: center;
 }
-.pos_icon_coeur{
+.pos_icon_coeur_acc{
     right: 25px;
     bottom: 40px;
+}
+.pos_icon_coeur_page{
+    right: 30px;
+    top: 250px;
+}
+.pos_icon_fleche{
+    left: 15px;
+}
+.top_15{
+    top: 15px;
 }
 /*----------------------*/
 
@@ -61,6 +74,9 @@ body{
 }
 .marg_bott_20{
     margin-bottom: 20px;
+}
+.pad_top_20{
+    padding-top: 20px;
 }
 /*---------------*/
 
