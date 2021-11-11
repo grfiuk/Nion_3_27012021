@@ -46,17 +46,22 @@ body{
 }
 .pos_icon_coeur_acc{
     right: 25px;
-    bottom: 40px;
+    bottom: 15px;
 }
 .pos_icon_coeur_page{
     right: 30px;
-    top: 250px;
 }
 .pos_icon_fleche{
     left: 15px;
 }
 .top_15{
     top: 15px;
+}
+.text_ali_center{
+    text-align: center;
+}
+.left_30{
+    left: 30px;
 }
 /*----------------------*/
 
@@ -67,6 +72,9 @@ body{
 }
 .marg_bott_5{
     margin-bottom: 5px;
+}
+.marg_top_10{
+    margin-top: 10px;
 }
 .marg_top_5{
     margin-top: 5px;
@@ -86,7 +94,12 @@ body{
 .pad_top_20{
     padding-top: 20px;
 }
-
+.marg_0{
+    margin: 0px;
+}
+.top-20{
+    top: -20px;
+}
 /*---------------*/
 
 
@@ -107,16 +120,28 @@ img{
 .div_fonc_width{
     width: 100vw;
 }
+.div_height_4{
+    height: 4px;
+}
+.div_width_40{
+    width: 40px;
+}
+.cercle_width{
+    width: 20px;
+}
+.cercle_height{
+    height: 20px;
+}
 /*------------------*/
 
 
 
 /*------color-----*/
 .background_Lgrey{
-    background-color: rgb(229, 229, 229);
+    background-color: rgb(246, 246, 246);
 }
 .bg_grey{
-    background-color: rgb(226, 224, 224);
+    background-color: rgb(234, 234, 234);
 }
 .bg_white{
     background-color: white;
@@ -135,6 +160,12 @@ img{
 .button_bg{
     background: rgb(147,86,220);
     background: linear-gradient(352deg, rgba(147,86,220,1) 38%, rgba(255,121,218,1) 96%);
+}
+.color_div{
+    background-color: #99E2D0;
+}
+.color_cercle{
+    background-color: #9356DC;
 }
 /*--------------------*/
 
@@ -159,6 +190,9 @@ img{
 .border_none{
     border: none;
 }
+.cercle{
+    border-radius: 10px;
+}
 /*-------------------*/
 
 
@@ -173,5 +207,8 @@ a{
 }
 .text_color_white{
     color: white;
+}
+.text_color_green{
+    color: rgb(72, 142, 116);
 }
 /*----------------------*/
