@@ -132,6 +132,9 @@ img{
 .cercle_height{
     height: 20px;
 }
+.width_0{
+    width: 0px;
+}
 /*------------------*/
 
 
@@ -193,6 +196,9 @@ img{
 .cercle{
     border-radius: 10px;
 }
+.dis_none{
+    display: none;
+}
 /*-------------------*/
 
 
@@ -212,3 +218,24 @@ a{
     color: rgb(72, 142, 116);
 }
 /*----------------------*/
+
+
+.animation_coche:hover{
+    
+}
+
+#anime{
+    animation-name: anim;
+    animation-duration: 3s;
+}
+
+@keyframes anim {
+    0%{
+        width: 0px;
+        position: absolute;
+    }
+    100%{
+        width: 40px;
+        position: relative;
+    }
+}
