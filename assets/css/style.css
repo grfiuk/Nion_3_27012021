@@ -82,8 +82,8 @@ body{
 .marg_top_5{
     margin-top: 5px;
 }
-.marg_bot_60{
-    margin-bottom: 60px;
+.marg_bot_70{
+    margin-bottom: 70px;
 }
 .marg_auto{
     margin: auto;
@@ -121,6 +121,9 @@ body{
 }
 .height_50{
     height: 50px;
+}
+.height_200{
+    height: 200px;
 }
 img{
     min-width: 100%;
