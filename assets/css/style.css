@@ -44,6 +44,9 @@ body{
 .al_item_center{
     align-items: center;
 }
+.al_item_end{
+    align-items: flex-end;
+}
 .pos_icon_coeur_acc{
     right: 25px;
     bottom: 15px;
@@ -79,6 +82,12 @@ body{
 .marg_top_5{
     margin-top: 5px;
 }
+.marg_bot_60{
+    margin-bottom: 60px;
+}
+.marg_auto{
+    margin: auto;
+}
 .pad_20{
     padding: 20px;
 }
@@ -106,6 +115,12 @@ body{
 /*------taille------*/
 .width_90{
     width: 90%;
+}
+.width_190{
+    width: 190px;
+}
+.height_50{
+    height: 50px;
 }
 img{
     min-width: 100%;
@@ -217,16 +232,30 @@ a{
 .text_color_green{
     color: rgb(72, 142, 116);
 }
+.font_15{
+    font-size: 15px;
+}
 /*----------------------*/
 
 
-.animation_coche:hover{
-    
+.animation_coche{
+    transition: 3s;
+    width: 100%;
 }
-
+.animation_coche:hover{
+    width: 75%;
+}
+.animation_coche::before{
+    height: 40px;
+    width: 40px;
+    background-color: #9356DC;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    content: "";
+}
 #anime{
-    animation-name: anim;
-    animation-duration: 3s;
+    transition: 0.5s;
 }
 
 @keyframes anim {
