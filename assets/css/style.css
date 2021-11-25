@@ -11,12 +11,8 @@ body,h1,h3,p,footer{
 .titre{
     font-family:"Shrikhand-Regular, sans-serif";
 }
-@font-face {
-    font-family:"Roboto-Regular, sans-serif" ;
-    src: url("../font/Roboto/Roboto-Regular.ttf");
-}
 body{
-    font-family: "Roboto-Regular, sans-serif";
+    font-family: 'Roboto', sans-serif;
 }
 /*--------------*/
 
@@ -38,6 +34,9 @@ body{
 .just_content_center{
     justify-content: center;
 }
+.just_content_spa_even{
+    justify-content: space-evenly;
+}
 .just_content_spa_bet{
     justify-content: space-between;
 }
@@ -57,14 +56,17 @@ body{
 .pos_icon_fleche{
     left: 15px;
 }
-.top_15{
-    top: 15px;
+.top_20{
+    top: 20px;
 }
 .text_ali_center{
     text-align: center;
 }
 .left_30{
     left: 30px;
+}
+.top_35{
+    top: 35px;
 }
 /*----------------------*/
 
@@ -82,8 +84,14 @@ body{
 .marg_top_5{
     margin-top: 5px;
 }
+.marg_bott_10{
+    margin-bottom: 10px;
+}
 .marg_bot_70{
     margin-bottom: 70px;
+}
+.pad_bot_70{
+    padding-bottom: 70px;
 }
 .marg_auto{
     margin: auto;
@@ -96,6 +104,8 @@ body{
 }
 .pad_5{
     padding: 5px;
+}.pad_l_10{
+    padding-left: 10px;
 }
 .marg_bott_20{
     margin-bottom: 20px;
@@ -108,6 +118,24 @@ body{
 }
 .top-20{
     top: -20px;
+}
+.pad_bot_5{
+    padding-bottom: 5px;
+}
+.pad_top_3{
+    padding-top: 3px;
+}
+.pad_bot_30{
+    padding-bottom: 30px;
+}
+.pad_top_10{
+    padding-top: 10px;
+}
+.pad_r_20{
+    padding-right: 20px;
+}
+.pad_15{
+    padding: 15px;
 }
 /*---------------*/
 
@@ -122,8 +150,8 @@ body{
 .height_50{
     height: 50px;
 }
-.height_200{
-    height: 200px;
+.height_250{
+    height: 250px;
 }
 img{
     min-width: 100%;
@@ -217,6 +245,9 @@ img{
 .dis_none{
     display: none;
 }
+.shadow_titre{
+    box-shadow: 5px 5px 5px rgb(241, 0, 0);
+}
 /*-------------------*/
 
 
@@ -238,8 +269,35 @@ a{
 .font_15{
     font-size: 15px;
 }
+.bold{
+    font-weight: bolder;
+}
+.font_10{
+    font-size: 10px;
+}
+.font_W_800{
+    font-weight: 800;
+}
+.font_w_300{
+    font-weight: 300;
+}
+.font_28{
+    font-size: 28px;
+}
+.font_w_500{
+    font-weight: 500;
+}
 /*----------------------*/
 
+
+.hover_fonc:hover{
+    background-color: rgb(243, 232, 255);
+}
+
+#mot_restaurant{
+    position: relative;
+    left: -100px;
+}
 
 .animation_coche{
     transition: 3s;

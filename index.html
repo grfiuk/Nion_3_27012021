@@ -7,51 +7,60 @@
     <title>ohmyfood</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/f640adf93f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="text_ali_center">
-        <h1 class="titre pad_5">
-            ohmyfood
-        </h1>
+    <header class="text_ali_center shadow_titre">
+        <div class="shadow_titre">        
+            <h1 class="titre shadow_titre">
+                ohmyfood
+            </h1>
+        </div>
+
         <p class="bg_grey pad_20"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
     </header>
-    <div class="dis_flex column al_item_center background_Lgrey pad_20 text_ali_center height_200 just_content_spa_bet">
+    <div class="dis_flex column al_item_center background_Lgrey pad_20 text_ali_center height_250 just_content_spa_even">
         <h3>Réservez le menu qui vous convient</h3>
         <p>
             Découvrez des restaurants d'exception, séléctionnés par nos soins.
         </p>
-        <button class="button_bg text_color_white pad_10 border_radius_button border_none box_shadow">Explorez nos restaurants</button>
+        <div>        
+            <button class="dis_flex height_50 width_190 button_bg text_color_white pad_10 border_radius_button border_none box_shadow font_15 just_content_center al_item_center">Explorez nos restaurants</button>
+        </div>
     </div>
     <div class="dis_flex just_content_center">
         <section class="div_fonc_width marg_20">
             <h2>Fonctionnement</h2>
             <div class="">
-                <div class="dis_flex div_height al_item_center style_menu_fonc box_shadow marg_20">
+                <div class="dis_flex div_height al_item_center style_menu_fonc box_shadow marg_20 pad_l_10 background_Lgrey hover_fonc">
                     <div class="pos_absolute cercle cercle_width cercle_height dis_flex just_content_center left_30 color_cercle text_color_white">1</div>
                     <i class="fas fa-mobile-alt marg_20"></i> Choisissez un restaurant
                 </div>
-                <div class="dis_flex div_height al_item_center style_menu_fonc box_shadow marg_20">
+                <div class="dis_flex div_height al_item_center style_menu_fonc box_shadow marg_20 pad_l_10 background_Lgrey hover_fonc">
                     <div class="pos_absolute cercle cercle_width cercle_height dis_flex just_content_center left_30 color_cercle text_color_white">2</div>
                     <i class="fas fa-list-ul marg_20"></i> Composez votre menu
                 </div>
-                <div class="dis_flex div_height al_item_center style_menu_fonc box_shadow marg_20">
+                <div class="dis_flex div_height al_item_center style_menu_fonc box_shadow marg_20 pad_l_10 background_Lgrey hover_fonc">
                     <div class="pos_absolute cercle cercle_width cercle_height dis_flex just_content_center left_30 color_cercle text_color_white">3</div>
                     <i class="fas fa-store marg_20"></i> Dégustez au restaurant
                 </div>
             </div>
         </section>
     </div> 
-    <h2>Restaurants</h2>
-    <div class="dis_flex background_Lgrey just_content_center">
+    
+    <div class="dis_flex background_Lgrey just_content_center column al_item_center pad_bot_70 pad_top_20">
+        <h2 id="mot_restaurant">Restaurants</h2>
         <div class="dis_flex column width_90">
             
             <a href="pages/palette_du_gout.html">
                 <div class="pos_relative bg_white border_radius_box box_shadow marg_bott_20">
                     <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="img_height border_radius_img">
-                    <p class="nouveau pos_absolute text_color_green pad_5">Nouveau</p>
+                    <p class="nouveau pos_absolute text_color_green pad_5 font_10 font_W_800">Nouveau</p>
                     <div class="pad_10">
-                        <h4 class="marg_0">La palette du goût</h4>
-                        <p class="">Ménilmontant</p>
+                        <h4 class="marg_0 bold">La palette du goût</h4>
+                        <p class="pad_bot_5 pad_top_3">Ménilmontant</p>
                     </div>
                     
                     <i class="far fa-heart fa-2x pos_absolute pos_icon_coeur_acc"></i> 
@@ -60,10 +69,10 @@
             <a href="pages/note_enchante.html">
                 <div class="pos_relative bg_white border_radius_box box_shadow marg_bott_20">
                     <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="img_height border_radius_img">
-                    <p class="nouveau pos_absolute text_color_green pad_5">Nouveau</p>
+                    <p class="nouveau pos_absolute text_color_green pad_5 font_10 font_W_800">Nouveau</p>
                     <div class="pad_10">
                         <h4 class="marg_0">La note enchantée</h4>
-                        <p>Charonne</p>   
+                        <p class="pad_bot_5 pad_top_3">Charonne</p>   
                     </div>
                     <i class="far fa-heart fa-2x pos_absolute pos_icon_coeur_acc"></i>
                 </div>
@@ -73,7 +82,7 @@
                     <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="img_height border_radius_img">
                     <div class="pad_10">
                         <h4 class="marg_0">À la française</h4>
-                        <p>Cité Rouge</p>                        
+                        <p class="pad_top_3 pad_bot_5">Cité Rouge</p>                        
                     </div>
                     <i class="far fa-heart fa-2x pos_absolute pos_icon_coeur_acc"></i>
                 </div>
@@ -83,7 +92,7 @@
                     <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="img_height border_radius_img">
                     <div class="pad_10">
                         <h4 class="marg_0">Le délice des sens</h4>
-                        <p>Folie-Méricourt</p>                        
+                        <p class="pad_bot_5 pad_top_3">Folie-Méricourt</p>                        
                     </div>
                     <i class="far fa-heart fa-2x pos_absolute pos_icon_coeur_acc"></i>
                 </div>
@@ -92,18 +101,18 @@
     </div>
     <footer class="footer_bg_color footer_color">
         <div class="pad_20"> 
-           <h3 class="titre text_color_white marg_bott_5">ohmyfood</h3>
+           <h3 class="titre text_color_white marg_bott_10">ohmyfood</h3>
            <div>
-               <p>
+               <p class="pad_5">
                    <i class="fas fa-utensils"></i> Proposer un restaurant
                 </p>
-                <p>
+                <p class="pad_5"> 
                     <i class="fas fa-hands-helping"></i> Devenir partenaire
                 </p>
                 <p>
                     Mentions légales
                 </p>
-                <p>
+                <p class="pad_5">
                     <a href="mailto:contact@OhMyFood.com" class="text_color_white">Contact</a>
                 </p>
             </div> 
