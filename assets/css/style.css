@@ -68,6 +68,15 @@ body{
 .top_35{
     top: 35px;
 }
+.right_15{
+    right: 15px;
+}
+.top_23{
+    top: 23px;
+}
+.left_13{
+    left:13px;
+}
 /*----------------------*/
 
 
@@ -144,6 +153,9 @@ body{
 
 
 /*------taille------*/
+.width_100{
+    width: 100%;
+}
 .width_90{
     width: 90%;
 }
@@ -183,6 +195,15 @@ img{
 }
 .width_0{
     width: 0px;
+}
+.width_360{
+    width: 400px;
+}
+.height_60{
+    height: 60px;
+}
+.width_230{
+    width: 260px;
 }
 /*------------------*/
 
@@ -257,6 +278,9 @@ img{
 .border_r{
     border-radius: 30px 30px 0px 0px;
 }
+.border_R_15{
+    border-radius: 0px 15px 15px 0px;
+}
 /*-------------------*/
 
 
@@ -318,10 +342,12 @@ a{
 
 .animation_coche{
     transition: 3s;
-    width: 100%;
+    width: 100%; 
+    border-radius:15px;
 }
 .animation_coche:hover{
-    width: 90%;
+    width: 85%;
+    border-radius: 15px 0px 0px 15px;
 }
 .test_coeur{
     border: 1px solid black;
@@ -336,7 +362,38 @@ a{
     height: 40px;
 }
 p{  
-    white-space: nowrap;
+    width:100%;
+   white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.anim{
+    display: none;
+}
+.anim:hover{
+    display: block;
+    width: 40px;
+}
+.overflow_h{
+    overflow: hidden;
+}
+
+.anime{
+    transition: 3s;
+    width: 0px;
+}
+.anime:hover{
+    width: 40px;
+}
+.z1{
+    z-index: 1;
+}
+.z4{
+    z-index: 4;
+}
+.text_h{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
