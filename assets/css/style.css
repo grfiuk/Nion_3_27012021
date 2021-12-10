@@ -149,6 +149,12 @@ body{
 .top-30{
     top: -30px;
 }
+.bott_43{
+    bottom: 44px;
+}
+.top_0{
+    top: 0px;
+}
 /*---------------*/
 
 
@@ -396,4 +402,9 @@ p{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.anim_coeur:hover::after{
+    background-color: white;
+    transition: 3s;
 }
