@@ -211,6 +211,12 @@ img{
 .width_230{
     width: 260px;
 }
+.height_40{
+    height: 40px;
+}
+.height_0{
+    height: 0px;
+}
 /*------------------*/
 
 
@@ -352,24 +358,19 @@ a{
     border-radius:15px;
 }
 .animation_coche:hover{
-    width: 85%;
+    width: calc(100% - 40px);
     border-radius: 15px 0px 0px 15px;
 }
-.test_coeur{
-    border: 1px solid black;
-    width: 40px;
-    background-color: rgb(244, 244, 244);
-    transition: 0.35s  ease-in-out;
-    transition: height 2s;
+.test_coeur::before{
+    background-color: #9356DC;
     clip-path: polygon(10% 30%, 11.70776081085205% 21.901859283447266%, 16.55534553527832% 15.19304084777832%, 23.6988525390625% 11.01323413848877%, 31.92439842224121% 10.091790199279785%, 39.81953048706055% 12.572881698608398%, 46.03266906738281% 18.0417537689209%, 49.503883361816406% 25.55470848083496%, 50.36681365966797% 26.168773651123047%, 53.59988021850586% 18.55046272277832%, 59.63880920410156% 12.889751434326172%, 67.45187377929688% 10.160799980163574%, 75.70257568359375% 10.82480239868164%, 82.97345733642578% 14.778581619262695%, 88.02918243408203% 21.332130432128906%, 89.98994445800781% 29.37255859375%, 89.34539031982422% 37.672271728515625%, 87.24967956542969% 45.73133850097656%, 83.93061065673828% 53.37131881713867%, 79.65013885498047% 60.519927978515625%, 74.64020538330078% 67.17975616455078%, 69.08085632324219% 73.38973236083984%, 63.10395812988281% 79.199951171875%, 56.80339813232422% 84.65811157226562%, 50.250328063964844% 89.81077575683594%, 43.68177795410156% 85.05619812011719%, 37.36013412475586% 79.6224365234375%, 31.35593605041504% 73.84038543701172%, 25.76107406616211% 67.66227722167969%, 20.70428466796875% 61.03786087036133%, 16.361190795898438% 53.92692947387695%, 12.960660934448242% 46.32259750366211%, 10.764165878295898% 38.29020309448242%, 10% 30%);
 }
-.test_coeur:hover{
-    background-color: #9356DC;
-    height: 40px;
+.test_coeur:hover::before{
+    background-color: black;
 }
 p{  
     width:100%;
-   white-space: nowrap;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -403,8 +404,28 @@ p{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.bg_coeur{
+    background-position: center;
+    background-size: 40px 40px;
+    background-image: url("../images/svg/coeur-2.svg");
+}
 
-.anim_coeur:hover::after{
-    background-color: white;
+.anim_coeur{
+}
+.anim_coeur:hover:after{
+    background-color: purple;
+    color: blue;
+}
+.anim_coeur::after{
+    background-color: red;
+    color: green;
+}
+.test{
+    position: absolute;
+    height: 38;
     transition: 3s;
+
+}
+.test:hover{
+    height: 0;
 }
