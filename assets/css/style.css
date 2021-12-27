@@ -229,6 +229,9 @@ img{
 .height_20{
     height: 20px;
 }
+.width_initial{
+    width: initial;
+}
 /*------------------*/
 
 
@@ -253,6 +256,7 @@ img{
     background-color: #99E2D0;
     top: 10px;
     right: 20px;
+    width: initial;
 }
 .button_bg{
     background: rgb(147,86,220);
@@ -350,6 +354,7 @@ a{
 .color_grey{
     color: dimgrey;
 }
+
 /*----------------------*/
 
 .z_inf{
@@ -442,16 +447,6 @@ p{
 }
 
 
-.anim_coeur{
-}
-.anim_coeur:hover:after{
-    background-color: purple;
-    color: blue;
-}
-.anim_coeur::after{
-    background-color: red;
-    color: green;
-}
 .test{
     position: absolute;
     height: 38;
@@ -534,3 +529,10 @@ p{
             transform:rotate(360deg);
         }
     }
+
+.text_pop:nth-child(2){
+    visibility: hidden;
+    display: none;
+    position: relative;
+    top: 300px;
+}
