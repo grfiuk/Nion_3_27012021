@@ -368,7 +368,7 @@ a{
     position: relative;
     left: -100px;
 }
-
+/*
 .animation_coche{
     transition: 3s;
     width: 100%; 
@@ -377,7 +377,7 @@ a{
 .animation_coche:hover{
     width: calc(100% - 40px);
     border-radius: 15px 0px 0px 15px;
-}
+}*/
 .test_coeur::after{
     position: absolute;
     bottom: 0;
@@ -399,13 +399,7 @@ p{
     text-overflow: ellipsis;
 }
 
-.anim{
-    display: none;
-}
-.anim:hover{
-    display: block;
-    width: 40px;
-}
+
 .overflow_h{
     overflow: hidden;
 }
@@ -414,9 +408,7 @@ p{
     transition: 3s;
     width: 0px;
 }
-.anime:hover{
-    width: 40px;
-}
+
 .z1{
     z-index: 1;
 }
@@ -449,25 +441,10 @@ p{
 
 .test{
     position: absolute;
-    height: 38;
+    height: 38px;
     transition: 3s;
 
 }
-
-.apparition::after{
-    margin: auto;
-    padding: auto;
-    transition: 3s;
-    background-color: #99E2D0;
-    content: url("../images/svg/check-circle-solid.svg");
-    width: 0%;
-    height: 60px;
-}
-.apparition:hover::after{
-    transition: 3s;
-    width: 40px;
-    animation: spin 4s;
-}   
 
 
 .loader{
@@ -501,6 +478,7 @@ p{
 .test1{
     z-index: 1334567890;
 }
+
 .test1:hover:nth-child(1)>:nth-child(1){
     transition: 3s;
     right: 0px;
@@ -529,10 +507,54 @@ p{
             transform:rotate(360deg);
         }
     }
+/*
+.text_pop:nth-child(n+1)>:nth-child(-n+1){
+    visibility: hidden;
+    transition: 3s;
+    animation: apparition 3s;
+}
 
-.text_pop:nth-child(2){
+.text_pop:nth-child(n+1)>:nth-child(-n+2){
     visibility: hidden;
     display: none;
-    position: relative;
-    top: 300px;
+    transition: 4s;
+    animation: apparition 4s;
+}
+*/
+.text_pop:nth-child(n+1)>:nth-child(0n+1){
+    position: absolute;
+    opacity: 0%;
+    visibility: hidden;
+    transition: visibility 0s, opacity 5s;
+    animation: apparition 2s both;
+   
+}
+.text_pop:nth-child(n+1)>:nth-child(0n+2){
+    position: absolute;
+    opacity: 0%;
+    visibility: hidden;
+    transition: visibility 0s, opacity 5s;
+    animation: apparition 2s 3s both;
+}
+.text_pop:nth-child(n+1)>:nth-child(0n+3){
+    position: absolute;
+    opacity: 0%;
+    visibility: hidden;
+    transition: visibility 0s, opacity 5s;
+    animation: apparition 2s 6s both;
+}
+
+@keyframes apparition{
+    from{
+        opacity: 0%;
+        position: absolute;
+    }
+    20%{
+        position: relative;
+    }
+    to{
+        position: relative;
+        opacity: 100%;
+        visibility: visible;
+    }
 }
