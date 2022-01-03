@@ -232,6 +232,9 @@ img{
 .width_initial{
     width: initial;
 }
+.width_unset{
+    width: unset;
+}
 /*------------------*/
 
 
@@ -526,7 +529,7 @@ p{
     opacity: 0%;
     visibility: hidden;
     transition: visibility 0s, opacity 5s;
-    animation: apparition 2s both;
+    animation: apparition 2s 3s both;
    
 }
 .text_pop:nth-child(n+1)>:nth-child(0n+2){
@@ -534,7 +537,7 @@ p{
     opacity: 0%;
     visibility: hidden;
     transition: visibility 0s, opacity 5s;
-    animation: apparition 2s 3s both;
+    animation: apparition 2s 4s both;
 }
 .text_pop:nth-child(n+1)>:nth-child(0n+3){
     position: absolute;
@@ -542,6 +545,13 @@ p{
     visibility: hidden;
     transition: visibility 0s, opacity 5s;
     animation: apparition 2s 6s both;
+}
+.text_pop:nth-child(n+1)>:nth-child(0n+4){
+    position: absolute;
+    opacity: 0%;
+    visibility: hidden;
+    transition: visibility 0s, opacity 5s;
+    animation: apparition 2s 7s both;
 }
 
 @keyframes apparition{
@@ -551,6 +561,7 @@ p{
     }
     20%{
         position: relative;
+        opacity: 20%;
     }
     to{
         position: relative;
