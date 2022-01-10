@@ -235,6 +235,9 @@ img{
 .width_unset{
     width: unset;
 }
+.width_300{
+    width: unset;
+}
 /*------------------*/
 
 
@@ -264,6 +267,11 @@ img{
 .button_bg{
     background: rgb(147,86,220);
     background: linear-gradient(352deg, rgba(147,86,220,1) 38%, rgba(255,121,218,1) 96%);
+
+}
+.button_bg:hover{
+    background: linear-gradient(352deg, rgb(160, 117, 212) 38%, rgb(254, 152, 225) 96%);
+    box-shadow: 3px 3px 10px rgb(207, 206, 206) !important;
 }
 .color_div{
     background-color: #99E2D0;
@@ -483,24 +491,24 @@ p{
 }
 
 .test1:hover:nth-child(1)>:nth-child(1){
-    transition: 3s;
+    transition: 800ms;
     right: 0px;
 }
 .test1:nth-child(1)>:nth-child(1){
-    transition: 3s;
+    transition: 800ms;
 
 }
 .test1:nth-child(1)>:nth-child(2){
     width: 100%;
-    transition: 3s;
+    transition: 800ms;
 }
 .test1:hover:nth-child(1)>:nth-child(2){
     width: calc(100% - 40px);
-    transition: 3s;
+    transition: 800ms;
 } 
 .test1:hover:nth-child(1)>:nth-child(1)>:nth-child(1){
-    transition: 3s;
-    animation: spin 3s;
+    transition: 800ms;
+    animation: spin 800ms;
 }
 @keyframes spin {
         from{
@@ -529,7 +537,7 @@ p{
     opacity: 0%;
     visibility: hidden;
     transition: visibility 0s, opacity 5s;
-    animation: apparition 2s 3s both;
+    animation: apparition 2s 2s both;
    
 }
 .text_pop:nth-child(n+1)>:nth-child(0n+2){
@@ -537,21 +545,21 @@ p{
     opacity: 0%;
     visibility: hidden;
     transition: visibility 0s, opacity 5s;
-    animation: apparition 2s 4s both;
+    animation: apparition 2s 2500ms both;
 }
 .text_pop:nth-child(n+1)>:nth-child(0n+3){
     position: absolute;
     opacity: 0%;
     visibility: hidden;
     transition: visibility 0s, opacity 5s;
-    animation: apparition 2s 6s both;
+    animation: apparition 2s 3000ms both;
 }
 .text_pop:nth-child(n+1)>:nth-child(0n+4){
     position: absolute;
     opacity: 0%;
     visibility: hidden;
     transition: visibility 0s, opacity 5s;
-    animation: apparition 2s 7s both;
+    animation: apparition 2s 3500ms both;
 }
 
 @keyframes apparition{
@@ -567,5 +575,45 @@ p{
         position: relative;
         opacity: 100%;
         visibility: visible;
+    }
+}
+@media  screen and (min-width: 700px) {
+    .media_w400{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .width_300{
+        width: 300px;
+    }
+    #mot_restaurant{
+        left: unset;
+    }
+
+
+}
+@media screen and (min-width:900px) {     
+    .width_400v2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    .width_400v3{
+        display: flex;
+        flex-direction: row;
+    }
+    .icon_acc_w400{
+        position: relative;
+        width: 250px;
+    }
+    .chiffre_w400{
+        left: -10px;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    .media_w400{
+        justify-content: space-between;
+        flex-wrap: nowrap;
     }
 }
