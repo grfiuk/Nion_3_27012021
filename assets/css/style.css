@@ -616,4 +616,11 @@ p{
         justify-content: space-between;
         flex-wrap: nowrap;
     }
+    .vu_w1200_p1{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .pad_top_20w1200{
+        padding-top: unset;
+    }
 }
