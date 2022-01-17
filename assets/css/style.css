@@ -400,7 +400,7 @@ a{
  
 }
 .test_coeur:hover::after{
-    transition: 3s;
+    transition: 1500ms;
     height: 100%;
 }
 p{  
@@ -575,6 +575,16 @@ p{
         visibility: visible;
     }
 }
+
+.margin_vignette{
+    margin:10px;
+}
+@media screen and (min-width:450px) {
+    #mot_restaurant{
+        left: unset;
+    }
+    
+}
 @media  screen and (min-width: 700px) {
     .media_w400{
         flex-direction: row;
@@ -586,6 +596,9 @@ p{
     }
     #mot_restaurant{
         left: unset;
+    }
+    .width_90{
+        width: unset;
     }
 
 
@@ -609,10 +622,16 @@ p{
     }
     
 }
-@media screen and (min-width: 1200px) {
-    .media_w400{
-        justify-content: space-between;
-        flex-wrap: nowrap;
+
+@media screen and (min-width: 1200px){
+    .width_90{
+        width: 90%;
+    }
+    .width_300{
+        width: 240px;
+    }
+    .img_w{
+        width: 240px;
     }
     .vu_w1200_p1{
         display: flex;
@@ -620,5 +639,14 @@ p{
     }
     .pad_top_20w1200{
         padding-top: unset;
+    }
+}
+
+@media screen and (min-width:1330px){
+    .img_w{
+        width: unset;
+    }
+    .width_300{
+        width: 300px;
     }
 }
