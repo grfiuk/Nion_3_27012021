@@ -536,7 +536,6 @@ p{
     visibility: hidden;
     transition: visibility 0s, opacity 5s;
     animation: apparition 2s 2s both;
-   
 }
 .text_pop:nth-child(n+1)>:nth-child(0n+2){
     position: absolute;
@@ -642,7 +641,7 @@ p{
     }
 }
 
-@media screen and (min-width:1330px){
+@media screen and (min-width:1340px){
     .img_w{
         width: unset;
     }
